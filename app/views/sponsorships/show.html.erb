@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Event:</b>
+  <%= @sponsorship.event %>
+</p>
+
+<p>
+  <b>Company:</b>
+  <%= @sponsorship.company %>
+</p>
+
+
+<%= link_to 'Edit', edit_sponsorship_path(@sponsorship) %> |
+<%= link_to 'Back', sponsorships_path %>

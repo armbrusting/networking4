@@ -1,4 +1,20 @@
 Networking4::Application.routes.draw do
+  get "pages/home"
+
+  resources :employments
+
+  resources :sponsorships
+
+  resources :companies
+
+  resources :followups
+
+  resources :meetings
+
+  resources :contacts
+
+  resources :events
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

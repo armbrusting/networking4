@@ -1,0 +1,31 @@
+<h1>Listing followups</h1>
+
+<table>
+  <tr>
+    <th>Event</th>
+    <th>Contact</th>
+    <th>Note</th>
+    <th>Duedate</th>
+    <th>Status</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @followups.each do |followup| %>
+  <tr>
+    <td><%= followup.event %></td>
+    <td><%= followup.contact %></td>
+    <td><%= followup.note %></td>
+    <td><%= followup.duedate %></td>
+    <td><%= followup.status %></td>
+    <td><%= link_to 'Show', followup %></td>
+    <td><%= link_to 'Edit', edit_followup_path(followup) %></td>
+    <td><%= link_to 'Destroy', followup, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Followup', new_followup_path %>

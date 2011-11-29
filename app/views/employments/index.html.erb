@@ -1,0 +1,25 @@
+<h1>Listing employments</h1>
+
+<table>
+  <tr>
+    <th>Contact</th>
+    <th>Company</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @employments.each do |employment| %>
+  <tr>
+    <td><%= employment.contact %></td>
+    <td><%= employment.company %></td>
+    <td><%= link_to 'Show', employment %></td>
+    <td><%= link_to 'Edit', edit_employment_path(employment) %></td>
+    <td><%= link_to 'Destroy', employment, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Employment', new_employment_path %>

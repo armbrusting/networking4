@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  event: 1
+  contact: 1
+  note: MyString
+  duedate: 2011-11-28 23:13:02
+  status: MyString
+
+two:
+  event: 1
+  contact: 1
+  note: MyString
+  duedate: 2011-11-28 23:13:02
+  status: MyString
